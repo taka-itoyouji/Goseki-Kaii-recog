@@ -8,20 +8,12 @@ from goseki_io import _resist_goseki
 from goseki_io import _resist_kaii
 from fileio import _resist_csv
 
-SERVER_ID = 754362078483185754
-MY_GUILD = discord.Object(SERVER_ID)  # テストしたいサーバーのID (test_taka)
-
 SIMU_URL = "https://mhrise.wiki-db.com/sim/" # （泣）シミュのURL
-
-class MyBot(commands.Bot):
-
-    async def setup_hook(self):
-        self.tree.copy_global_to(guild=MY_GUILD)
-        await self.tree.sync(guild=MY_GUILD)
 
 intents = discord.Intents.default()
 intents.message_content = True  # メッセージコンテントのintentはオンにする
-bot = MyBot(command_prefix="!", intents=intents)
+# bot = MyBot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix='!', intents=intents)
 
 ### test プログラム
 # ピンポンの返答
