@@ -8,7 +8,6 @@ from goseki_io import _resist_goseki
 from goseki_io import _resist_kaii
 from fileio import _resist_csv
 
-TOKEN = 'MTAzMDY1NjI2Mzg0MDg2MjI4OA.GGWFpg.gFGwW3LlAzKRz3RDQhXVev2r2kLFeMf3juPBjk' # TOKENを貼り付け
 SERVER_ID = 754362078483185754
 MY_GUILD = discord.Object(SERVER_ID)  # テストしたいサーバーのID (test_taka)
 
